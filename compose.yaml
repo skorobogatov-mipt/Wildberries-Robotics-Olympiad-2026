@@ -1,0 +1,39 @@
+services:
+  simulation:
+    build: simulation_docker
+    container_name: simulation 
+    ipc: host
+    stdin_open: true
+    tty: true
+    networks:
+      - general
+    environment:
+      - DISPLAY
+      - XAUTORITY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /etc/localtime:/etc/localtime:ro
+      - ./wb_olymp_env/:/root/workspace
+
+  software:
+    build: software_docker
+    container_name: software 
+    ipc: host
+    stdin_open: true
+    tty: true
+    networks:
+      - general
+    environment:
+      - DISPLAY
+      - XAUTORITY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /etc/localtime:/etc/localtime:ro
+      - ./wb-software-workspace/:/root/workspace
+
+networks:
+  general:
+    attachable: true
+    internal: false
+    driver: bridge
+
