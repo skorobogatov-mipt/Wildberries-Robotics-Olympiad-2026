@@ -4,8 +4,8 @@
 [submodule "wb-software-workspace"]
 	path = wb-software-workspace
 	url = https://wavegit.mipt.ru/wb_olympiad/wb-software-workspace
-[submodule "robot_software_docker"]
-	path = robot_software_docker
+[submodule "software_docker"]
+	path = software_docker
 	url = https://wavegit.mipt.ru/starkit.edu/robot_software_docker
 [submodule "simulation_docker"]
 	path = simulation_docker
