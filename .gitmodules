@@ -1,12 +1,12 @@
 [submodule "wb_olymp_env"]
 	path = wb_olymp_env
-	url = https://wavegit.mipt.ru/wb_olympiad/wb_olymp_env
+	url = https://github.com/skorobogatov-mipt/simulation_workspace 
 [submodule "wb-software-workspace"]
 	path = wb-software-workspace
-	url = https://wavegit.mipt.ru/wb_olympiad/wb-software-workspace
+	url = https://github.com/skorobogatov-mipt/software-workspace 
 [submodule "simulation_docker"]
 	path = simulation_docker
-	url = https://wavegit.mipt.ru/starkit.edu/simulation_docker
+	url = https://github.com/skorobogatov-mipt/simulation_docker 
 [submodule "software_docker"]
 	path = software_docker
-	url = https://wavegit.mipt.ru/starkit.edu/robot_software_docker
+	url = https://github.com/skorobogatov-mipt/wb_software_docker 
