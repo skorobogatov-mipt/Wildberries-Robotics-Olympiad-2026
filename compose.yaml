@@ -17,6 +17,9 @@ services:
 
   software:
     build: software_docker
+    depends_on:
+      simulation:
+        condition: service_started
     container_name: software 
     ipc: host
     stdin_open: true
